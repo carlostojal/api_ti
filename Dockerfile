@@ -20,6 +20,7 @@ RUN pip3 install opencv-python requests
 
 # copy the files to the container
 COPY . /var/www/html
+RUN chmod -R +rw .
 
 WORKDIR /var/www/html
 
